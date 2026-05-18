@@ -17,3 +17,5 @@ images/*.jpeg
 !images/logo.png
 !images/logo.jpg
 !images/landing.jpg
+
+.vscode/
