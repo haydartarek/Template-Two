@@ -1,17 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kasper modern creative agency template with premium UI and responsive layout." />
+    <meta
+      name="description"
+      content="Kasper modern creative agency template with premium UI and responsive layout."
+    />
+    <meta name="theme-color" content="#111827" />
+    <meta property="og:title" content="Kasper | Creative Studio" />
+    <meta
+      property="og:description"
+      content="Creative agency template with polished UI, strong performance, and responsive interactions."
+    />
+    <meta property="og:type" content="website" />
     <title>Kasper | Creative Studio</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/kasper.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,10 +33,23 @@
     <header id="top-header">
       <div class="container">
         <a href="#home" class="logo" aria-label="Kasper home">
-          <img src="images/logo.png" alt="Kasper logo" />
+          <img
+            src="images/logo.png"
+            alt="Kasper logo"
+            width="300"
+            height="120"
+            fetchpriority="high"
+            decoding="async"
+          />
         </a>
         <nav aria-label="Main navigation">
-          <button class="toggle-menu" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <button
+            class="toggle-menu"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
             <i class="fas fa-bars" aria-hidden="true"></i>
           </button>
 
@@ -46,16 +70,16 @@
     </header>
 
     <main id="main-content">
-      <section class="landing" id="home">
+      <section class="landing" id="home" data-landing>
         <div class="overlay"></div>
         <div class="container">
           <div class="text" data-reveal="fade-up">
             <div class="content">
               <p class="eyebrow">Creative Digital Agency</p>
               <h1>Hello World! We Are Kasper. We Make Art That Performs.</h1>
-              <p>
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-                tincidunt nibh pulvinar a.
+              <p class="hero-description">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
               </p>
               <div class="landing-actions">
                 <a href="#services" class="btn btn-primary">Explore Services</a>
@@ -65,13 +89,44 @@
           </div>
         </div>
 
-        <i class="fas fa-angle-left change-background" aria-hidden="true"></i>
-        <i class="fas fa-angle-right change-background" aria-hidden="true"></i>
+        <button
+          class="change-background prev-slide"
+          type="button"
+          aria-label="Previous hero slide"
+        >
+          <i class="fas fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button
+          class="change-background next-slide"
+          type="button"
+          aria-label="Next hero slide"
+        >
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </button>
 
-        <ul class="bullets" aria-hidden="true">
-          <li></li>
-          <li class="active"></li>
-          <li></li>
+        <ul class="bullets" aria-label="Hero slides">
+          <li>
+            <button
+              type="button"
+              class="active"
+              data-slide="0"
+              aria-label="Show slide 1"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-slide="1"
+              aria-label="Show slide 2"
+            ></button>
+          </li>
+          <li>
+            <button
+              type="button"
+              data-slide="2"
+              aria-label="Show slide 3"
+            ></button>
+          </li>
         </ul>
       </section>
 
@@ -80,8 +135,9 @@
           <div class="srv" data-reveal="fade-up">
             <h2>Services</h2>
             <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-              tincidunt nibh pulvinar a. Curabitur aliquet quam.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Curabitur aliquet quam.
             </p>
           </div>
 
@@ -91,7 +147,8 @@
               <div class="text">
                 <h3>Modern Web Experiences</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit.
                 </p>
               </div>
             </article>
@@ -100,7 +157,8 @@
               <div class="text">
                 <h3>Automation & Systems</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit.
                 </p>
               </div>
             </article>
@@ -109,7 +167,8 @@
               <div class="text">
                 <h3>Brand & Visual Design</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit.
                 </p>
               </div>
             </article>
@@ -118,7 +177,8 @@
               <div class="text">
                 <h3>Creative Production</h3>
                 <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit.
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit.
                 </p>
               </div>
             </article>
@@ -146,71 +206,79 @@
           <div class="srv" data-reveal="fade-up">
             <h2>Portfolio</h2>
             <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-              tincidunt nibh pulvinar a.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             </p>
           </div>
 
-          <ul class="shuffle" data-reveal="fade-up" aria-label="Portfolio categories">
-            <li class="active">All</li>
-            <li>App</li>
-            <li>Photo</li>
-            <li>Web</li>
-            <li>Print</li>
+          <ul
+            class="shuffle"
+            data-reveal="fade-up"
+            aria-label="Portfolio categories"
+          >
+            <li>
+              <button type="button" class="active" data-filter="all">
+                All
+              </button>
+            </li>
+            <li><button type="button" data-filter="app">App</button></li>
+            <li><button type="button" data-filter="photo">Photo</button></li>
+            <li><button type="button" data-filter="web">Web</button></li>
+            <li><button type="button" data-filter="print">Print</button></li>
           </ul>
         </div>
 
         <div class="imgs-container">
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="photo" data-reveal="fade-up">
             <img src="images/p1.jpg" alt="Portfolio project 1" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="app" data-reveal="fade-up">
             <img src="images/p2.jpg" alt="Portfolio project 2" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="web" data-reveal="fade-up">
             <img src="images/p3.jpg" alt="Portfolio project 3" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="print" data-reveal="fade-up">
             <img src="images/p4.jpg" alt="Portfolio project 4" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="photo" data-reveal="fade-up">
             <img src="images/p5.jpg" alt="Portfolio project 5" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="web" data-reveal="fade-up">
             <img src="images/p6.jpg" alt="Portfolio project 6" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="print" data-reveal="fade-up">
             <img src="images/p7.jpg" alt="Portfolio project 7" />
             <div class="caption">
               <h4>Awesome Image</h4>
               <p>Photography</p>
             </div>
           </article>
-          <article class="box" data-reveal="fade-up">
+          <article class="box" data-category="app" data-reveal="fade-up">
             <img src="images/p8.jpg" alt="Portfolio project 8" />
             <div class="caption">
               <h4>Awesome Image</h4>
@@ -223,13 +291,33 @@
       </section>
 
       <section class="video">
-        <video autoplay muted loop playsinline>
+        <video
+          class="promo-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/design1.jpg"
+        >
           <source src="images/kasper.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
         </video>
-        <div class="text" data-reveal="fade-up">
-          <h2>Super Awesome Video Here</h2>
-          <p>It Is All You Need</p>
-          <button type="button">See More</button>
+        <div class="text" data-reveal="fade-right">
+          <p class="video-kicker">Showreel 2026</p>
+          <h2>Build Something People Remember</h2>
+          <p>
+            From strategy to launch, we craft bold digital experiences that grow
+            brands and drive measurable results.
+          </p>
+          <div class="video-actions">
+            <a class="video-btn video-btn-primary" href="#portfolio"
+              >Watch Projects</a
+            >
+            <a class="video-btn video-btn-outline" href="#contact"
+              >Start a Project</a
+            >
+          </div>
         </div>
       </section>
 
@@ -238,11 +326,15 @@
           <div class="srv" data-reveal="fade-up">
             <h2>About Us</h2>
             <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-              tincidunt nibh pulvinar a.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
             </p>
           </div>
-          <img src="images/about.jpg" alt="About Kasper team" data-reveal="fade-up" />
+          <img
+            src="images/about.jpg"
+            alt="About Kasper team"
+            data-reveal="fade-up"
+          />
         </div>
       </section>
 
@@ -250,22 +342,22 @@
         <div class="container">
           <article class="box" data-reveal="fade-up">
             <i class="fas fa-mug-hot" aria-hidden="true"></i>
-            <div class="number">1,236</div>
+            <div class="number" data-target="1236">1,236</div>
             <p>Coffee Drinks</p>
           </article>
           <article class="box" data-reveal="fade-up">
             <i class="far fa-folder" aria-hidden="true"></i>
-            <div class="number">256</div>
+            <div class="number" data-target="256">256</div>
             <p>Completed Projects</p>
           </article>
           <article class="box" data-reveal="fade-up">
             <i class="far fa-envelope" aria-hidden="true"></i>
-            <div class="number">1,743</div>
+            <div class="number" data-target="1743">1,743</div>
             <p>Mail Sent</p>
           </article>
           <article class="box" data-reveal="fade-up">
             <i class="fas fa-trophy" aria-hidden="true"></i>
-            <div class="number">17</div>
+            <div class="number" data-target="17">17</div>
             <p>Awards Received</p>
           </article>
         </div>
@@ -273,60 +365,100 @@
 
       <section class="our-skills section">
         <div class="container">
-          <div class="testimonials" data-reveal="fade-up">
+          <div
+            class="testimonials"
+            data-reveal="fade-up"
+            data-slider-interval="5500"
+          >
             <h3>Testimonials</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, dolore iure. Alias reiciendis
-              asperiores deleniti.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae, dolore iure. Alias reiciendis asperiores deleniti.
             </p>
-            <div class="content">
-              <img src="images/skills1.jpg" alt="Client profile 1" />
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit non quae ut. Reiciendis, fugit.
-                <p>Haydar Tarek, CEO</p>
-              </div>
+            <div class="testimonials-slider" aria-live="polite">
+              <article
+                class="content testimonial-slide is-active"
+                aria-hidden="false"
+              >
+                <img src="images/skills1.jpg" alt="Client profile 1" />
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  impedit non quae ut. Reiciendis, fugit.
+                  <p>Haydar Tarek, CEO</p>
+                </div>
+              </article>
+              <article class="content testimonial-slide" aria-hidden="true">
+                <img src="images/skills2.jpg" alt="Client profile 2" />
+                <div class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  impedit non quae ut. Reiciendis, fugit.
+                  <p>Haydar Tarek, CEO</p>
+                </div>
+              </article>
             </div>
-            <div class="content">
-              <img src="images/skills2.jpg" alt="Client profile 2" />
-              <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit non quae ut. Reiciendis, fugit.
-                <p>Haydar Tarek, CEO</p>
-              </div>
-            </div>
-            <ul class="bullets" aria-hidden="true">
-              <li></li>
-              <li class="active"></li>
-              <li></li>
+            <ul class="bullets" aria-label="Testimonials slides">
+              <li>
+                <button
+                  type="button"
+                  class="active"
+                  data-testimonial-to="0"
+                  aria-label="Show testimonial 1"
+                ></button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-testimonial-to="1"
+                  aria-label="Show testimonial 2"
+                ></button>
+              </li>
             </ul>
           </div>
 
           <div class="skills" data-reveal="fade-up">
             <h3>Skills</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, similique quaerat ipsum alias blanditiis ipsa?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              similique quaerat ipsum alias blanditiis ipsa?
             </p>
             <div class="prog-holder">
               <h4>Adobe</h4>
               <div class="prog">
-                <span style="width: 90%" data-progress="90%"></span>
+                <span
+                  style="width: 0"
+                  data-target="90%"
+                  data-progress="90%"
+                ></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>HTML &amp; CSS</h4>
               <div class="prog">
-                <span style="width: 85%" data-progress="85%"></span>
+                <span
+                  style="width: 0"
+                  data-target="85%"
+                  data-progress="85%"
+                ></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>JavaScript</h4>
               <div class="prog">
-                <span style="width: 80%" data-progress="80%"></span>
+                <span
+                  style="width: 0"
+                  data-target="80%"
+                  data-progress="80%"
+                ></span>
               </div>
             </div>
             <div class="prog-holder">
               <h4>PHP</h4>
               <div class="prog">
-                <span style="width: 90%" data-progress="90%"></span>
+                <span
+                  style="width: 0"
+                  data-target="90%"
+                  data-progress="90%"
+                ></span>
               </div>
             </div>
           </div>
@@ -335,7 +467,10 @@
 
       <section class="quote" data-reveal="fade-up">
         <div class="container">
-          <q>Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</q>
+          <q
+            >Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+            elit, eget tincidunt.</q
+          >
           <span>Haydar Tarek</span>
         </div>
       </section>
@@ -345,8 +480,8 @@
           <div class="srv" data-reveal="fade-up">
             <h2>Pricing</h2>
             <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
-              tincidunt.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
             </p>
           </div>
           <div class="plans">
@@ -410,14 +545,38 @@
 
       <section class="subscribe section" id="subscribe">
         <div class="container">
-          <form action="#" method="post">
-            <i class="far fa-envelope fa-lg" aria-hidden="true"></i>
-            <input type="email" name="mail" placeholder="Your email" aria-label="Your email" />
-            <input type="submit" value="Subscribe" />
-          </form>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quas commodi, ipsum ipsam corporis magni!
-          </p>
+          <div class="subscribe-copy" data-reveal="fade-up">
+            <span class="subscribe-kicker">Newsletter</span>
+            <h2>Get Creative Insights Weekly</h2>
+            <p>
+              Receive practical design and growth ideas, fresh case studies, and
+              product updates directly to your inbox.
+            </p>
+          </div>
+
+          <div class="subscribe-card" data-reveal="fade-up">
+            <form id="subscribe-form" action="#" method="post" novalidate>
+              <i class="far fa-envelope fa-lg" aria-hidden="true"></i>
+              <label class="sr-only" for="subscribe-email">Email address</label>
+              <input
+                id="subscribe-email"
+                type="email"
+                name="mail"
+                placeholder="Enter your email"
+                aria-label="Your email"
+                required
+              />
+              <input type="submit" value="Subscribe" />
+            </form>
+            <p
+              id="subscribe-feedback"
+              class="form-feedback"
+              aria-live="polite"
+            ></p>
+            <p class="subscribe-note">
+              No spam. Unsubscribe at any time with one click.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -426,15 +585,50 @@
           <div class="srv" data-reveal="fade-up">
             <h2>Contact Us</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem neque quod quasi, vero sed porro.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
+              neque quod quasi, vero sed porro.
             </p>
           </div>
           <div class="content">
-            <form action="#" method="post" data-reveal="fade-up">
-              <input class="main-input" type="text" name="name" placeholder="Your name" />
-              <input class="main-input" type="email" name="email" placeholder="Your email" />
-              <textarea class="main-input" name="message" placeholder="Your message"></textarea>
+            <form
+              id="contact-form"
+              action="#"
+              method="post"
+              data-reveal="fade-up"
+              novalidate
+            >
+              <label class="sr-only" for="contact-name">Your name</label>
+              <input
+                id="contact-name"
+                class="main-input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <label class="sr-only" for="contact-email">Your email</label>
+              <input
+                id="contact-email"
+                class="main-input"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <label class="sr-only" for="contact-message">Your message</label>
+              <textarea
+                id="contact-message"
+                class="main-input"
+                name="message"
+                placeholder="Your message"
+                required
+              ></textarea>
               <input type="submit" value="Send message" />
+              <p
+                id="contact-feedback"
+                class="form-feedback"
+                aria-live="polite"
+              ></p>
             </form>
             <div class="info" data-reveal="fade-up">
               <h4>Get in touch</h4>
@@ -454,17 +648,49 @@
 
     <footer class="footer">
       <div class="container">
-        <img src="images/logo.png" alt="Kasper logo" />
+        <img
+          src="images/logo.png"
+          alt="Kasper logo"
+          width="300"
+          height="120"
+          loading="lazy"
+          decoding="async"
+        />
         <p>We are social</p>
         <div class="social-icon">
           <a href="#home" aria-label="Home"><i class="fas fa-home"></i></a>
-          <a href="http://bodybuildingarabs.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://bodybuildingarabs.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="http://bodybuildingarabs.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a
+            href="http://bodybuildingarabs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="http://bodybuildingarabs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="http://bodybuildingarabs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
-        <p class="copyright">&copy; 2021 <span>Kasper</span> All Right Reserved</p>
+        <p class="copyright">
+          &copy; <span class="year">2026</span> <span>Haydar Tarek</span> All
+          Right Reserved
+        </p>
       </div>
     </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="js/main.js" defer></script>
   </body>
